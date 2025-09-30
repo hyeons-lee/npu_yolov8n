@@ -65,7 +65,7 @@ class QConv2d(nn.Conv2d):
         return quant_w
     
     def act_quantizer(self, x):
-        quant_x = self.discretizer(x, self.a_scale, self.min_val, self.max_val)
+        quant_x = self.discretizer(x, self.a_scale, 0, 2*self.max_val+1)
         return quant_x
 
     def bias_quantizer(self, b):

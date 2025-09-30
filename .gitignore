@@ -212,3 +212,4 @@ test.ipynb
 .vscode/
 .conda/
 *.jpg
+*.ipynb
