@@ -15,11 +15,11 @@ class TrainConfig:
 @dataclass
 class FinetuneConfig:
     batch_size: int = 16
-    num_epochs: int = 8#4
-    learning_rate: float = 1e-4#1e-5
+    num_epochs: int = 4
+    learning_rate: float = 1e-5
     weight_decay: float = 0.0005
     momentum: float = 0.937
     step_size: int = 4
-    gamma: float = 0.5#0.25
+    gamma: float = 0.25
     validation_frequency: int = 1
     print_info: bool = True
